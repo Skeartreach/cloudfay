@@ -21,13 +21,16 @@
               </div>
       @endif
   <body>
+
 <div class="container margin-top-s">
     {{ Form::open(array('url' => 'login/check', 'method' => 'put' ,'class' => 'form-signin')) }}
       <legend class="form-signin-heading">Connexion</legend> 
         {{ Form::text('frm_username','', array('class' => 'form-control','required','autofocus', 'placeholder'=>"Identifiant")) }}
         {{ Form::password('frm_password', array('class' => 'form-control','required', 'placeholder'=>"Mot de passe" )) }}
-        {{ Form::submit('Connexion',array('class' => 'btn btn-lg-3 btn-default btn-block')) }}
+        {{ Form::submit('Connexion',array('class' => 'btn btn-lg-3 btn-warning btn-block')) }}
+        <a class='no-underline' href='./signup' ><input type='button' class='btn btn-lg-3 btn-default btn-block' value="S'inscrire"></input></a>
     {{ Form::close() }}
+    
 </div>
 
     <!-- Bootstrap core JavaScript

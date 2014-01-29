@@ -16,3 +16,4 @@ Route::get('/', function()
 	return View::make('hello');
 });
 Route::get('login', array('uses'=>'login@index'));
+Route::get('signup', array('uses'=>'user@index'));

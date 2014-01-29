@@ -43,6 +43,15 @@
 .margin-top-s{
 	margin-top: 2%;
 }
+.margin-top-m{
+  margin-top: 10%;
+}
 .margin-left-s{
 	margin-left: 2%;
+}
+.margin-right-m{
+  margin-left: 10%;
+}
+.no-underline:hover{
+text-decoration: none;
 }
