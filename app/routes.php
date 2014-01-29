@@ -13,7 +13,8 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('login/index');
 });
 Route::get('login', array('uses'=>'login@index'));
 Route::get('signup', array('uses'=>'user@index'));
+//Route::get('menu', array('uses'=>'user@index'));
